@@ -1,25 +1,24 @@
 # Create a function (or write a script in Shell) that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
 
+
 def even_or_odd(number):
   if number % 2 == 0:
       return 'Even'
   return 'Odd'
 
 
-### TEST CASES ###
+if __name__ == "__main__":
 
-# test case 1
-print(even_or_odd(2))
-# result: 'Even'
+    ### TEST CASES ###
 
-# test case 2
-print(even_or_odd(0))
-# result: 'Even'
+    # test case 1
+    assert even_or_odd(2) == 'Even'
 
-# test case 3
-print(even_or_odd(7))
-# result: 'Odd'
+    # test case 2
+    assert even_or_odd(0) == 'Even'
 
-# test case 4
-print(even_or_odd(1))
-# result: 'Odd'
+    # test case 3
+    assert even_or_odd(7) == 'Odd'
+
+    # test case 4
+    assert even_or_odd(1) == 'Odd'

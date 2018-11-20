@@ -10,24 +10,23 @@
 #
 # Examples can be found in the test fixture.
 
+
 def isLeapYear(year):
     return year % 100 != 0 and year % 4 == 0 or year % 400 == 0
 
 
-### TEST CASES ###
+if __name__ == "__main__":
 
-# test case 1
-print(isLeapYear(1984))
-# result: True
+    ### TEST CASES ###
 
-# test case 2
-print(isLeapYear(2000))
-# result: True
+    # test case 1
+    assert isLeapYear(1984) == True
 
-# test case 3
-print(isLeapYear(1234))
-# result: False
+    # test case 2
+    assert isLeapYear(2000) == True
 
-# test case 4
-print(isLeapYear(1100))
-# result: False
+    # test case 3
+    assert isLeapYear(1234) == False
+
+    # test case 4
+    assert isLeapYear(1100) == False

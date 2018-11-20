@@ -1,18 +1,19 @@
 # Write a function called repeatStr which repeats the given string string exactly n times.
 
+
 def repeat_str(repeat, string):
     return repeat * string
 
-### TEST CASES ###
 
-# test case 1
-print(repeat_str(4, 'a'))
-# result: 'aaaa'
+if __name__ == "__main__":
 
-# test case 2
-print(repeat_str(3, 'hello '))
-# result: 'hello hello hello '
+    ### TEST CASES ###
 
-# test case 3
-print(repeat_str(2, 'abc'))
-# result: 'abcabc'
+    # test case 1
+    assert repeat_str(4, 'a') == 'aaaa'
+
+    # test case 2
+    assert repeat_str(3, 'hello ') == 'hello hello hello '
+
+    # test case 3
+    assert repeat_str(2, 'abc') == 'abcabc'

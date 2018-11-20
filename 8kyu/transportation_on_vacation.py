@@ -9,6 +9,7 @@
 #
 # Write a code that gives out the total amount for different days(d).
 
+
 def rental_car_cost(d):
     if d >= 3 and d < 7:
         return (d * 40) - 20
@@ -18,20 +19,18 @@ def rental_car_cost(d):
         return d * 40
 
 
-### TEST CASES ###
+if __name__ == "__main__":
 
-# test case 1
-print(rental_car_cost(1))
-# result: 40
+    ### TEST CASES ###
 
-# test case 2
-print(rental_car_cost(4))
-# result: 140
+    # test case 1
+    assert rental_car_cost(1) == 40
 
-# test case 3
-print(rental_car_cost(7))
-# result: 230
+    # test case 2
+    assert rental_car_cost(4) == 140
 
-# test case 4
-print(rental_car_cost(8))
-# result: 270
+    # test case 3
+    assert rental_car_cost(7) == 230
+
+    # test case 4
+    assert rental_car_cost(8) == 270

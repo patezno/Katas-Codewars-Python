@@ -4,6 +4,7 @@
 #
 # Can you help her?
 
+
 def greet(name):
     if name == "Johnny":
         return "Hello, my love!"
@@ -11,20 +12,18 @@ def greet(name):
         return "Hello, {name}!".format(name=name)
 
 
-### TEST CASES ###
+if __name__ == "__main__":
 
-# test case 1
-print(greet("James"))
-# result: "Hello, James!"
+    ### TEST CASES ###
 
-# test case 2
-print(greet("Jane"))
-# result: "Hello, Jane!"
+    # test case 1
+    assert greet("James") == "Hello, James!"
 
-# test case 3
-print(greet("Jim"))
-# result: "Hello, Jim!"
+    # test case 2
+    assert greet("Jane") == "Hello, Jane!"
 
-# test case 4
-print(greet("Johnny"))
-# result: "Hello, my love!"
+    # test case 3
+    assert greet("Jim") == "Hello, Jim!"
+
+    # test case 4
+    assert greet("Johnny") == "Hello, my love!"

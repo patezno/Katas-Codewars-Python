@@ -12,6 +12,7 @@
 #     Young under 21 old.
 #     Adults have 21 or more.
 
+
 def people_with_age_drink(age):
     if age < 14:
         return "drink toddy"
@@ -23,24 +24,21 @@ def people_with_age_drink(age):
         return "drink whisky"
 
 
-### TEST CASES ###
+if __name__ == "__main__":
+    
+    ### TEST CASES ###
 
-# test case 1
-print(people_with_age_drink(13))
-# result: "drink toddy"
+    # test case 1
+    assert people_with_age_drink(13) == "drink toddy"
 
-# test case 2
-print(people_with_age_drink(17))
-# result: "drink coke"
+    # test case 2
+    assert people_with_age_drink(17) == "drink coke"
 
-# test case 3
-print(people_with_age_drink(18))
-# result: "drink beer"
+    # test case 3
+    assert people_with_age_drink(18) == "drink beer"
 
-# test case 4
-print(people_with_age_drink(20))
-# result: "drink beer"
+    # test case 4
+    assert people_with_age_drink(20) == "drink beer"
 
-# test case 5
-print(people_with_age_drink(30))
-# result: "drink whisky"
+    # test case 5
+    assert people_with_age_drink(30) == "drink whisky"

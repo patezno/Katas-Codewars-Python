@@ -4,24 +4,23 @@
 #
 # All values will be positive integers or floats, or zero.
 
+
 def plural(n):
         return n != 1
 
 
-### TEST CASES ###
+if __name__ == "__main__":
 
-# test case 1
-print(plural(0))
-# result: True
+    ### TEST CASES ###
 
-# test case 2
-print(plural(0.5))
-# result: True
+    # test case 1
+    assert plural(0) == True
 
-# test case 3
-print(plural(1))
-# result: False
+    # test case 2
+    assert plural(0.5) == True
 
-# test case 4
-print(plural(100))
-# result: True
+    # test case 3
+    assert plural(1) == False
+
+    # test case 4
+    assert plural(100) == True

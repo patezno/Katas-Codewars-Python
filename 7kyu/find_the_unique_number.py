@@ -10,14 +10,10 @@
 
 def find_uniq(arr):
 
-    test = -70000000000000000000000000000
-
-    for number in arr:
-
-        if test == number or test == -70000000000000000000000000000:
-            test = number
-        else:
-            return number
+    if arr.count(max(arr)) == 1:
+        return max(arr)
+    else:
+        return min(arr)
 
 
 if __name__ == "__main__":

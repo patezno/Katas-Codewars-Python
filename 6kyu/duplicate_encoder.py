@@ -6,13 +6,17 @@
 
 
 def duplicateEncoder(string):
+
     string = string.upper()
     resultado = ""
+
     for letra in string:
+
         if string.count(letra) > 1:
             resultado = resultado + ")"
         else:
            resultado = resultado + "("
+
     return resultado
 
 

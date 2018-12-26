@@ -3,6 +3,7 @@
 #  Ignore capitalization when determining if a character is a duplicate.
 #
 #  Examples: "din" => "(((" "recede" => "()()()" "Success" => ")())())" "(( @" => "))(("
+# Redone using Dictionaries
 
 
 def duplicateEncoder(string):
@@ -17,7 +18,7 @@ def duplicateEncoder(string):
             words[letter] = ')'
 
     result = ""
-    for letter in string: 
+    for letter in string:
         result += words[letter]
 
     return result

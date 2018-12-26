@@ -17,7 +17,7 @@ def duplicateEncoder(string):
             words[letter] = ')'
 
     result = ""
-    for letter in string:
+    for letter in string: 
         result += words[letter]
 
     return result

@@ -31,8 +31,19 @@
 
 def comp(array1, array2):
 
+    if array1 == None or array2 == None:
+        return False
 
- if __name__ == '__name__':
+    for number in array1:
+        if array2 and (number ** 2 not in array2):
+            return False
+        else:
+            array2.remove(number ** 2)
+
+    return True
+
+
+ if __name__ == '__main__':
 
      ### TEST CASE ###
 

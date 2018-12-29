@@ -7,7 +7,25 @@
 # to_camel_case("The_Stealth_Warrior") # returns "TheStealthWarrior"
 
 def to_camel_case(text):
-    pass
+
+    newString = ''
+    flag = False
+
+    for letter in text:
+        if letter == '-' or letter == '_':
+            flag = True
+            continue
+        elif flag:
+            newString += letter.upper()
+            flag = False
+        else:
+            newString += letter
+
+    newString = newString.replace('_', '')
+    newString = newString.replace('-', '')
+
+    return newString
+
 
 if __name__ == '__main__':
 

@@ -30,7 +30,6 @@
 
 
 def comp(array1, array2):
-
     if array1 == None or array2 == None:
         return False
 
@@ -43,11 +42,10 @@ def comp(array1, array2):
     return True
 
 
- if __name__ == '__main__':
+if __name__ == '__main__':
+    ### TEST CASE ###
 
-     ### TEST CASE ###
+    a1 = [121, 144, 19, 161, 19, 144, 19, 11]
+    a2 = [11 * 11, 121 * 121, 144 * 144, 19 * 19, 161 * 161, 19 * 19, 144 * 144, 19 * 19]
 
-     a1 = [121, 144, 19, 161, 19, 144, 19, 11]
-     a2 = [11*11, 121*121, 144*144, 19*19, 161*161, 19*19, 144*144, 19*19]
-
-     assert comp(a1, a2) == True
+    assert comp(a1, a2) == True
